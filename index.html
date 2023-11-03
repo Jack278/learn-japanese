@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Practice Katakana & Hiragana</title>
+    <meta name="description" content="Master Katakana & Hiragana with my user-friendly practice site! Learn, practice, and perfect your Japanese writing skills effortlessly.">
+    <meta name="keywords" content="Practice, Katakana, Hiragana">
+    <meta name="author" content="Jack Shuter">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@600&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <div class="container vh-100">
+            <div class="col-12 d-flex flex-column justify-content-center h-100">
+                <div class="d-flex flex-column justify-content-center flex-grow-1">
+                    <h1 class="pt-3 text-secondary">Practice Katakana & Hiragana</h1>
+                    <p class="pb-3 text-secondary">Master Katakana & Hiragana with my user-friendly practice site! Learn, practice, and perfect your Japanese writing skills effortlessly.</p>
+                    <div id="options" class="border border-secondary border-3 mx-3 mb-4 p-3">
+                        <h6 class="text-secondary">Options:</h6>
+                        <div class="form-check form-switch me-4 mt-3 d-inline-block">
+                            <input class="form-check-input" type="checkbox" role="switch" id="showAnswersSwitch">
+                            <label class="form-check-label small text-secondary" for="showAnswersSwitch">Show answers</label>
+                        </div>
+                        <div class="form-check form-switch me-4 mt-3 d-inline-block">
+                            <input class="form-check-input" type="checkbox" role="switch" id="hiraganaSwitch" checked="checked">
+                            <label class="form-check-label small text-secondary" for="hiraganaSwitch">Hiragana</label>
+                        </div>
+                        <div class="form-check form-switch me-4 mt-3 d-inline-block">
+                            <input class="form-check-input" type="checkbox" role="switch" id="katakanaSwitch" checked="checked">
+                            <label class="form-check-label small text-secondary" for="katakanaSwitch">Katakana</label>
+                        </div> 
+                        <div class="form-check form-switch me-4 mt-3 d-inline-block">
+                            <input class="form-check-input" type="checkbox" role="switch" id="themeSwitch" checked="checked">
+                            <label class="form-check-label small text-secondary" for="themeSwitch">Dark theme</label>
+                        </div>                          
+                    </div>
+                    <span id="character" class="mx-auto"></span>
+                    <span id="sound" class="mb-3 text-center text-primary smaller"></span>
+                    <form id="answerForm" class="w-100">
+                        <label for="answer" class="form-label ps-1 smaller">Answer:</label>
+                        <input type="text" id="answer" class="form-control" autocomplete="off" aria-autocomplete="none" />
+                        <button type="submit" id="submit-button" class="btn btn-success mt-3 w-100">Submit &RightArrow;</button>
+                    </form>
+                    <div id="stats" class="d-flex flex-column mt-3">
+                        <span id="correct-answers" class="text-secondary"></span>
+                        <span id="incorrect-answers" class="text-secondary"></span>
+                        <span id="accuracy" class="text-secondary"></span>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center text-secondary w-100 small py-3">
+                    Open source & created by&nbsp;<a href="https://github.com/Jack278" class="link-secondary" target="_blank">Jack278</a>&nbsp;&hearts;
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+        <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
